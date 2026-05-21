@@ -1,4 +1,4 @@
-# Paws & Home 
+# 🐾 Paws & Home 
 
 A full-stack Pet Adoption web application where users can browse pets, submit adoption requests, manage pet listings, and track adoption activities. The platform provides a secure and user-friendly experience for both pet owners and adopters.
 
@@ -43,7 +43,6 @@ The purpose of this project is to create a modern and responsive pet adoption pl
 - Tailwind CSS
 - DaisyUI
 - Firebase Authentication
-- Axios
 - React Hook Form
 - TanStack Query
 
@@ -52,7 +51,6 @@ The purpose of this project is to create a modern and responsive pet adoption pl
 - Express.js
 - MongoDB
 - JWT
-- Cookie Parser
 
 ---
 
@@ -62,22 +60,18 @@ The purpose of this project is to create a modern and responsive pet adoption pl
 ```bash
 react
 react-router-dom
-axios
 firebase
 react-hot-toast
 react-icons
 react-hook-form
 @tanstack/react-query
 tailwindcss
-daisyui
-sweetalert2
-```
+daisyui```
 
 ## Server Side
 ```bash
 express
 mongodb
-cors
 dotenv
 jsonwebtoken
 cookie-parser
