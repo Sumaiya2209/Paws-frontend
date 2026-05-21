@@ -16,7 +16,14 @@ export default function HomeFooter() {
           <p className="text-on-surface-variant">Phone: (555) 123-4567</p>
           <p className="text-on-surface-variant">Austin, TX</p>
         </div>
-        
+        <div>
+          <h5 className="mb-2 font-label-md uppercase tracking-wider text-on-surface">Social</h5>
+          <div className="flex gap-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-primary">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-primary">Instagram</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-primary">Twitter</a>
+          </div>
+        </div>
       </div>
       <div className="mx-auto mt-stack-lg max-w-container-max border-t border-outline-variant/30 px-margin-mobile pt-stack-md text-center md:px-margin-desktop">
         <p className="text-label-sm text-on-surface-variant">© {new Date().getFullYear()} Paws & Home. All rights reserved.</p>
