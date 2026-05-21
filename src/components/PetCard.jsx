@@ -37,8 +37,7 @@ export default function PetCard({ pet, onAdopt }) {
             <button
               type="button"
               onClick={onAdopt}
-              className="flex-1 rounded-xl bg-gradient-to-b from-primary-container to-primary py-3 font-label-md text-white"
-            >
+              className="flex-1 rounded-xl bg-linear-to-b from-primary-container to-primary py-3 font-label-md text-white" >
               Adopt Now
             </button>
           )}
