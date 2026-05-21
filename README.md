@@ -1,36 +1,182 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐾 Pet Adoption Platform
 
-## Getting Started
+A full-stack Pet Adoption web application where users can browse pets, submit adoption requests, manage pet listings, and track adoption activities. The platform provides a secure and user-friendly experience for both pet owners and adopters.
 
-First, run the development server:
+---
 
+## 🚀 Live Website
+
+🔗 Live URL: https://your-live-site-url.com
+
+---
+
+## 📌 Project Purpose
+
+The purpose of this project is to create a modern and responsive pet adoption platform where users can:
+
+- Find pets available for adoption
+- Submit adoption requests
+- Manage their own pet listings
+- Track adoption request status
+- Experience secure authentication and protected routes
+
+---
+
+# ✨ Features
+
+- 🔐 JWT Authentication with HTTPOnly Cookies
+- 🐶 Add, Update & Delete Pet Listings
+- ❤️ Adoption Request System
+- 🔍 Search & Filter Pets by Name and Species
+- 📱 Fully Responsive Design
+- 🛡️ Protected Dashboard & Private Routes
+- ⚡ Featured Pets Section on Homepage
+- 📋 Adoption Request Management System
+
+---
+
+# 🖥️ Main Functionalities
+
+## 🏠 Home Page
+- Hero Banner Section
+- Featured Pets Section
+- Why Adopt Pets
+- Success Stories
+- Pet Care Tips
+- Additional Custom Sections
+
+---
+
+## 🔑 Authentication
+### Login
+- Email & Password Login
+- Google Login
+- Error Handling with Toast
+
+### Registration
+- Name
+- Email
+- Photo URL
+- Password Validation
+
+---
+
+## 🐾 All Pets Page
+- View all pets
+- Search pets by name
+- Filter pets by species
+- View pet details
+
+---
+
+## 📋 Dashboard
+### Add Pet
+Users can add pets with detailed information.
+
+### My Listings
+- Update pet information
+- Delete pet
+- Manage adoption requests
+
+### My Requests
+- Track request status
+- Cancel requests
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+- React.js
+- React Router
+- Tailwind CSS
+- DaisyUI
+- Firebase Authentication
+- Axios
+- React Hook Form
+- TanStack Query
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT
+- Cookie Parser
+
+---
+
+# 📦 NPM Packages Used
+
+## Client Side
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+react
+react-router-dom
+axios
+firebase
+react-hot-toast
+react-icons
+react-hook-form
+@tanstack/react-query
+tailwindcss
+daisyui
+sweetalert2
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Server Side
+```bash
+express
+mongodb
+cors
+dotenv
+jsonwebtoken
+cookie-parser
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🔐 Security Features
 
-## Learn More
+- JWT Token Authentication
+- HTTPOnly Cookies
+- Protected Routes
+- Owner-based Authorization
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 📂 Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── layouts/
+ ├── routes/
+ ├── hooks/
+ ├── providers/
+ ├── api/
+ └── firebase/
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# ⚙️ Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Client
+```env
+VITE_apiKey=your_key
+VITE_authDomain=your_domain
+VITE_projectId=your_project_id
+```
+
+## Server
+```env
+DB_USER=your_db_user
+DB_PASS=your_db_password
+JWT_SECRET=your_secret
+```
+
+---
+
+# 👨‍💻 Author
+
+Developed with ❤️ by Your Name
