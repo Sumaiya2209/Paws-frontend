@@ -5,15 +5,16 @@ import NavLinks from "./NavLinks";
 import NavAuth from "./NavAuth";
 import { authClient } from "@/lib/auth-client";
 
+const privateLinks = [
+  { name: "My Requests", path: "/dashboard/requests" },
+  { name: "Add Pet", path: "/dashboard/pets/new" },
+];
+
 const publicLinks = [
   { name: "Home", path: "/" },
   { name: "All Pets", path: "/all-pets" },
 ];
 
-const privateLinks = [
-  { name: "My Requests", path: "/dashboard/requests" },
-  { name: "Add Pet", path: "/dashboard/pets/new" },
-];
 
 function PrivateLinks() {
   const { data: session } = authClient.useSession();
@@ -22,8 +23,7 @@ function PrivateLinks() {
     <Link
       key={l.path}
       href={l.path}
-      className="text-on-surface-variant transition-colors hover:text-primary"
-    >
+      className="text-on-surface-variant transition-colors hover:text-primary">
       {l.name}
     </Link>
   ));
