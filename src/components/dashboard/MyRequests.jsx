@@ -15,16 +15,16 @@ export default function MyRequests() {
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    load();
+  }, []);
+
   const load = () => {
     getMyRequests()
       .then(setRequests)
       .catch((e) => toast.error(e.message))
       .finally(() => setLoading(false));
   };
-
-  useEffect(() => {
-    load();
-  }, []);
 
   const handleCancel = async (id) => {
     try {
@@ -57,6 +57,7 @@ export default function MyRequests() {
         <div className="glass-card overflow-hidden rounded-2xl">
           <table className="w-full">
             <thead>
+
               <tr className="border-b bg-surface-container-low/50 text-left text-sm uppercase text-on-surface-variant">
                 <th className="p-4">Pet Name</th>
                 <th className="p-4">Request Date</th>
@@ -65,6 +66,7 @@ export default function MyRequests() {
                 <th className="p-4 text-right">Actions</th>
               </tr>
             </thead>
+            
             <tbody>
               {requests.map((r) => (
                 <tr key={r._id} className="border-b">
