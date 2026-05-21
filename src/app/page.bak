@@ -1,0 +1,25 @@
+import AdoptionProcess from "@/components/home/AdoptionProcess";
+import FeaturedPets from "@/components/home/featuredPets";
+import Footer from "@/components/home/Footer";
+import Hero from "@/components/home/Hero";
+import Newsletter from "@/components/home/Newsletter";
+import SuccessStories from "@/components/home/SuccessStories";
+import WhyAdopt from "@/components/home/WhyAdopt";
+
+
+export default function Home() {
+  return (
+    <>
+      
+      <main className="pt-20">
+        <Hero />
+        <FeaturedPets />
+        <WhyAdopt />
+        <SuccessStories />
+        <AdoptionProcess />
+        <Newsletter />
+      </main>
+      <Footer />
+    </>
+  );
+}
